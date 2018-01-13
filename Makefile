@@ -131,7 +131,7 @@ publish:
 bootstrap:
 	make clean-all
 	yarn
-	./node_modules/.bin/lerna bootstrap
+	./node_modules/.bin/lerna bootstrap --hoist
 	make build
 	cd packages/babel-runtime; \
 	node scripts/build-dist.js
